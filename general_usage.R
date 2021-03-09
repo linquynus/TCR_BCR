@@ -3,7 +3,7 @@ library(gplots)
 
 
 
-source("quy_TCR_utils.R")
+source("./utils/quy_TCR_utils.R")
 
 tcr.res <- read.csv("filtered_contig_annotations.csv", stringsAsFactors = FALSE)
 
@@ -29,7 +29,7 @@ dev.off()
 
 
 ## BCR
-source("./quy_BCR_utils.R")
+source("./utils/quy_BCR_utils.R")
 bcr.res <- read.csv("./BCR/filtered_contig_annotations.csv", stringsAsFactors = FALSE)
 
 # separate by each sample
